@@ -2,9 +2,7 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   darkMode: 'class',
-  content: [
-    './src/**/*.{js,ts,jsx,tsx}'
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
 
   theme: {
     container: {
@@ -48,11 +46,11 @@ const config: Config = {
       lineHeight: {
         '1-1': '1.1',
         '1-2': '1.2',
-        '1-4': '1.4',
+        '1-4': '1.4'
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 }
 
 export default config
