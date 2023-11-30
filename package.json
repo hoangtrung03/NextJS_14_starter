@@ -7,9 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "type-check": "tsc --noEmit",
     "prettier": "prettier --check \"src/app/**/(*.tsx|*.ts|*.css|*.scss)\"",
     "prettier:fix": "prettier --write \"src/app/**/(*.tsx|*.ts|*.css|*.scss)\"",
     "commit": "cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
@@ -18,11 +24,6 @@
     "*.+(js|jsx|ts|tsx|json|css)": [
       "prettier --write"
     ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   },
   "dependencies": {
     "@commitlint/cli": "^18.4.3",
