@@ -1,4 +1,5 @@
 import Navbar from '@/components/ui/Navbar'
+import type { ISearchParam } from '@/types/common'
 
 export async function generateMetadata() {
   return {
@@ -28,7 +29,9 @@ export async function generateMetadata() {
   }
 }
 
-export default function Home() {
+export default function Home({ searchParams }: { searchParams: ISearchParam }) {
+  console.log('searchParams', searchParams.viewport)
+
   return (
     <main className='flex min-h-screen flex-col items-center justify-between p-24'>
       <Navbar />
