@@ -1,4 +1,4 @@
-import Navbar from '@/components/ui/Navbar'
+import Navbar from '@/components/Navbar'
 import type { ISearchParam } from '@/types/common'
 
 export async function generateMetadata() {
