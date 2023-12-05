@@ -1,11 +1,13 @@
 import { NEXT_PUBLIC_GOOGLE_GTM } from '@/constants/configGlobal'
-import Script from 'next/script'
+import { GoogleTagManager } from '@next/third-parties/google'
 import BaseDataLayer from '../BaseDataLayer'
 
 export default function BaseComponent() {
   return (
     <>
-      {NEXT_PUBLIC_GOOGLE_GTM && (
+      <GoogleTagManager gtmId={NEXT_PUBLIC_GOOGLE_GTM as string} />
+      <BaseDataLayer />
+      {/* {NEXT_PUBLIC_GOOGLE_GTM && (
         <>
           <Script
             id='google-tag-manager'
@@ -19,9 +21,8 @@ export default function BaseComponent() {
           <!-- End Google Tag Manager -->`
             }}
           />
-          <BaseDataLayer />
-        </>
-      )}
+          </>
+        )} */}
     </>
   )
 }
