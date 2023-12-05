@@ -1,7 +1,9 @@
+import { BASE_URL } from '@/constants/configGlobal'
 import Image from 'next/image'
 
 export async function generateMetadata() {
   return {
+    metadataBase: new URL(BASE_URL as string),
     title: {
       default: 'Title Website'
     },
@@ -14,7 +16,7 @@ export async function generateMetadata() {
       description: 'Description website',
       images: [
         {
-          url: 'meta image',
+          url: '/assets/images/about-us-banner.jpg',
           width: 1920,
           height: 1080
         }
