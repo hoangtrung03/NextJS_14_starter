@@ -18,6 +18,13 @@ const config: Config = {
       }
     },
     extend: {
+      colors: {
+        third: '#F9FAFC',
+        'primary-dark': '#171717',
+        red: {
+          1: '#E60000'
+        }
+      },
       fontSize: {
         10: '10px',
         12: '12px',
@@ -41,7 +48,8 @@ const config: Config = {
       },
       boxShadow: {
         primary: '0px 2px 8px 0px rgba(0, 0, 0, 0.10)',
-        secondary: '0px 4px 16px 0px rgba(0, 0, 0, 0.20)'
+        secondary: '0px 4px 16px 0px rgba(0, 0, 0, 0.20)',
+        third: '0px 2px 2px 0px rgba(0, 0, 0, 0.04)'
       },
       lineHeight: {
         '1-1': '1.1',

@@ -1,4 +1,3 @@
-import Navbar from '@/components/Navbar'
 import { BASE_URL } from '@/constants/configGlobal'
 import type { ISearchParam } from '@/types/common'
 
@@ -35,9 +34,8 @@ export default function Home({ searchParams }: { searchParams: ISearchParam }) {
   console.log('searchParams', searchParams.viewport)
 
   return (
-    <main>
-      <Navbar />
-      <h1>Cửa hàng</h1>
-    </main>
+    <section>
+      <h1 className='h-screen'>Cửa hàng</h1>
+    </section>
   )
 }
